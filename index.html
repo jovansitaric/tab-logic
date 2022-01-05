@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion - tabs</title>
+    <!-- Get Global CSS style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tabs -->
+    <div class="tab-container js-container">
+        <ul class="tabs js-tabs">
+            <li>
+                <!-- Svaki html tag moze da dobije neki nasumicni atribut kao ovaj data id -->
+                <!-- Jedini uslov jeste da ako zelimo da nazovemo atribut 'id' dajemo mu prefiks 'data' -->
+                <a class="tab-item js-tabItem" href="#" data-id="cars">Automobili</a>
+            </li>
+            <li>
+                <a class="tab-item js-tabItem" href="#" data-id="equipment">Oprema</a>
+            </li>
+            <li>
+                <a class="tab-item js-tabItem" href="#" data-id="tires">Gume</a>
+            </li>
+        </ul>
+        <div class="content-container">
+            <div class="tab-content js-tabContent" data-id="cars">
+                <h2>Kola</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cum optio maxime odio totam, corrupti in, atque odit dolor quo debitis qui. Cum cumque laboriosam deleniti possimus voluptatum, illo minus?</div>
+            </div>
+            <div class="tab-content js-tabContent" data-id="equipment">
+                <h2>Oprema</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tenetur nihil officia labore, placeat nesciunt!</div>
+            </div>
+            <div class="tab-content js-tabContent" data-id="tires">
+                <h2>Gume</h2>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed asperiores sequi placeat obcaecati!</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

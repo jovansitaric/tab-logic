@@ -1,0 +1,52 @@
+/* Tabs */
+
+.tabs {
+    display: flex;
+    list-style: none;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #000;
+    transition: color 400ms, background-color 400ms;
+}
+
+.tabs > *:not(:first-child) {
+    margin-left: 30px;
+}
+
+.tab-item {
+    background-color: silver;
+    padding: 15px 30px;
+    border-radius: 12px;
+}
+
+
+/* Content */
+.content-container {
+    position: relative;
+}
+
+.tab-content {
+    position: absolute;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-top: 30px;
+    background-color: orange;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 400ms;
+}
+
+/* JS */
+
+.tabs a.-active {
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+}
+
+.-active {
+    opacity: 1;
+    pointer-events: all;
+}
