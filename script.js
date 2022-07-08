@@ -23,7 +23,7 @@ function tabs() {
             // Prvo nadji ako postoji trenutno aktivna klasa
             const currentActiveContent = document.querySelector('.js-tabContent.-active');
             console.log(currentActiveContent);
-
+            // Ukloni aktivnu klasu sa tabova ako je prethodno postojala
             if (currentActiveContent != null || currentActiveContent != undefined) {
                 currentActiveContent.classList.remove('-active');
             }
